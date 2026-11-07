@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090a">
+  <meta name="description" content="MA XIANG — 交互设计与产品设计。">
+  <title>MA XIANG — Interaction designer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <script src="./product.js" defer></script>
+  <script src="./apps.js" defer></script>
+  <script src="./color-picker.js" defer></script>
+  <script src="./background-titles.js" defer></script>
+  <script src="./work-directory.js" defer></script>
+  <script src="./ending.js" defer></script>
+</head>
+<body>
+  <div class="ending-backdrop" aria-hidden="true"></div>
+  <a class="work-brand" href="#home" aria-label="MA XIANG，返回首页" inert aria-hidden="true">
+    <svg viewBox="180 1450 4660 940" aria-hidden="true" focusable="false">
+      <image href="./assets/ma-xiang-handwritten.png" width="4961" height="3508" class="handwriting" />
+    </svg>
+  </a>
+  <nav class="work-directory" aria-label="作品目录" inert aria-hidden="true">
+    <a href="#layout-design"><span class="directory-label">Layout Design</span><span class="directory-range">FIG1--FIG5</span></a>
+    <a href="#product-design"><span class="directory-label">Product Design</span><span class="directory-range">FIG6--FIG13</span></a>
+    <a href="#mobile-apps"><span class="directory-label">Mobile Apps Dump</span><span class="directory-range">FIG14--FIG19</span></a>
+  </nav>
+  <header class="header">
+      <nav aria-label="主导航">
+        <a class="active" href="#home" aria-current="page">HOME</a>
+        <a id="about-open" href="./about.html">ABOUT</a>
+      </nav>
+  </header>
+  <main class="hero" id="home">
+    <section class="introduction" aria-label="MA XIANG">
+      <div class="drawing-stage" id="drawing-stage">
+        <h1 class="name">
+          <span class="sr-only">MA XIANG</span>
+          <svg class="signature" viewBox="180 1450 4660 940" role="img" aria-label="MA XIANG，原创手写字" focusable="false">
+            <image href="./assets/ma-xiang-handwritten.png" width="4961" height="3508" class="handwriting" />
+          </svg>
+        </h1>
+        <canvas id="drawing" aria-label="按住鼠标左键拖动，或用手指拖动绘画。按 Escape 清除涂鸦。"></canvas>
+        <div class="pencil" id="pencil" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="currentColor" focusable="false">
+            <path fill-rule="evenodd" d="M227.31 73.37 182.63 28.68a16 16 0 0 0-22.63 0L36.69 152.05A15.89 15.89 0 0 0 32 163.31V208a16 16 0 0 0 16 16h44.69A15.88 15.88 0 0 0 104 219.31L227.31 96a16 16 0 0 0 0-22.63ZM92.69 208H48v-44.69l88-88L180.69 120ZM192 108.68 147.31 64l24-24L216 84.68Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="playful-intro" aria-label="fun-doing designer at large">
+        <button class="word-bubble" id="word-bubble" aria-label="切换设计关键词">
+          <span id="bubble-word">founding?</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1"><path d="m3 3 14 14M17 3 3 17"/></svg>
+        </button>
+        <p class="role-collage"><span class="role-piece fun-word">fun-doing</span><span class="role-piece designer-word">designer</span><span class="role-piece at-word">at</span><span class="role-piece large-word">large</span></p>
+      </div>
+    </section>
+    <a class="scroll-prompt" href="#layout-design" aria-label="下滑查看版式设计作品">
+      <div class="scroll-track" aria-hidden="true">
+        <span class="scroll-group"><span>下滑更多</span><span>下滑更多</span><span>下滑更多</span></span>
+        <span class="scroll-group"><span>下滑更多</span><span>下滑更多</span><span>下滑更多</span></span>
+      </div>
+    </a>
+  </main>
+  <section class="layout-section" id="layout-design" aria-labelledby="layout-title">
+    <div class="layout-title">
+      <h2 id="layout-title" class="sr-only">Layout Design</h2>
+      <div class="liquid-type" aria-hidden="true"></div>
+      <svg class="liquid-outline" viewBox="0 0 1200 240" aria-hidden="true"><text x="600" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="155" font-weight="400" letter-spacing="-9">Layout Design</text></svg>
+      <svg class="layout-black" viewBox="0 0 1200 240" aria-hidden="true">
+        <defs><mask id="layout-image-overlap" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha"></mask></defs>
+        <text mask="url(#layout-image-overlap)" x="600" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="155" font-weight="400" letter-spacing="-9">Layout Design</text>
+      </svg>
+    </div>
+    <div class="layout-gallery">
+      <figure class="layout-figure figure-1">
+        <button class="artwork-open" aria-label="放大查看 FIG1：袋子里的苹果" data-figure="0"><img src="./assets/layout/fig1.png" alt="袋子里的苹果，淡黄色背景的实验性海报版式" width="1800" height="2400" decoding="async"></button>
+        <figcaption>FIG1</figcaption>
+      </figure>
+      <figure class="layout-figure figure-2">
+        <button class="artwork-open" aria-label="放大查看 FIG2：马岩松建筑设计信息图" data-figure="1"><img src="./assets/layout/fig2.png" alt="以红色时间线、人物肖像与建筑照片构成的马岩松信息图" width="7200" height="5400" loading="lazy" decoding="async"></button>
+        <figcaption>FIG2</figcaption>
+      </figure>
+      <figure class="layout-figure figure-3">
+        <button class="artwork-open" aria-label="放大查看 FIG3：卵" data-figure="2"><img src="./assets/layout/fig3.jpg" alt="以鸡蛋摄影与中英文文字构成的卵主题海报" width="1920" height="2560" loading="lazy" decoding="async"></button>
+        <figcaption>FIG3</figcaption>
+      </figure>
+      <figure class="layout-figure figure-4">
+        <button class="artwork-open" aria-label="放大查看 FIG4：云霞空" data-figure="3"><img src="./assets/layout/fig4.jpg" alt="以飞机舷窗与日落摄影构成的云霞空主题海报" width="2471" height="3295" loading="lazy" decoding="async"></button>
+        <figcaption>FIG4</figcaption>
+      </figure>
+      <figure class="layout-figure figure-5">
+        <button class="artwork-open clock-poster" aria-label="放大查看 FIG5：HOLD THE LINE" data-figure="4"><img src="./assets/layout/fig5.jpg" alt="以椅子、手套与鞋子摄影构成的留白海报版式" width="1514" height="2019" loading="lazy" decoding="async"><span class="layout-clock" aria-hidden="true"></span></button>
+        <figcaption>FIG5</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="product-section" id="product-design" aria-labelledby="product-title">
+      <div class="product-title">
+        <h2 id="product-title" class="sr-only">Product Design</h2>
+        <div class="liquid-type" aria-hidden="true"></div>
+        <svg class="liquid-outline" viewBox="0 0 1200 240" aria-hidden="true"><text x="600" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="155" font-weight="400" letter-spacing="-9">Product Design</text></svg>
+        <svg class="layout-black" viewBox="0 0 1200 240" aria-hidden="true">
+          <defs><mask id="product-image-overlap" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha"></mask></defs>
+          <text mask="url(#product-image-overlap)" x="600" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="155" font-weight="400" letter-spacing="-9">Product Design</text>
+        </svg>
+      </div>
+    <div class="product-scene">
+      <div class="product-viewport" role="region" aria-label="产品设计作品，自动循环展示，点击图片放大">
+        <div class="product-track">
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG6：月球行星扩香器包装展开图"><img src="./assets/product/product-1.png" alt="月球行星扩香器的黑色包装展开设计" width="1334" height="1179" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG6</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG7：月球行星扩香器包装"><img src="./assets/product/product-2.png" alt="月球行星扩香器的黑色包装盒效果图" width="1246" height="1096" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG7</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG8：牙刷设计"><img src="./assets/product/product-3.png" alt="TOOTHBRUSH 牙刷产品设计展示" width="1054" height="1492" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG8</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG9：喷雾瓶设计"><img src="./assets/product/product-4.png" alt="三款浅色喷雾瓶产品造型设计" width="1448" height="1086" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG9</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG10：眼镜结构设计"><img src="./assets/product/product-5.png" alt="灰色眼镜的结构分解与产品效果展示" width="1024" height="1536" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG10</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG11：人因人机分析"><img src="./assets/product/product-6.png" alt="人因人机分析与产品使用研究草图" width="1491" height="1055" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG11</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG12：儿童吸嗅顺气仪"><img src="./assets/product/product-7.png" alt="黄色儿童吸嗅顺气仪的产品设计展板" width="3508" height="4961" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG12</figcaption></figure>
+          <figure class="product-figure"><button class="artwork-open" aria-label="放大查看 FIG13：折风便携无叶风扇"><img src="./assets/product/product-8.png" alt="折风便携无叶风扇的结构和使用场景设计展板" width="1054" height="1492" loading="lazy" decoding="async" draggable="false"></button><figcaption>FIG13</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="apps-section" id="mobile-apps" aria-labelledby="apps-title">
+    <div class="apps-title">
+      <h2 id="apps-title" class="sr-only">Mobile Apps Dump</h2>
+      <div class="liquid-type" aria-hidden="true"></div>
+      <svg class="liquid-outline" viewBox="0 0 1200 240" aria-hidden="true"><text x="600" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" letter-spacing="-7">Mobile Apps</text><text x="600" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" letter-spacing="-7">Dump</text></svg>
+      <svg class="layout-black" viewBox="0 0 1200 240" aria-hidden="true">
+        <defs><mask id="apps-image-overlap" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha"></mask></defs>
+        <g mask="url(#apps-image-overlap)"><text x="600" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" letter-spacing="-7">Mobile Apps</text><text x="600" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="130" letter-spacing="-7">Dump</text></g>
+      </svg>
+    </div>
+    <div class="apps-gallery">
+      <figure class="apps-figure app-1"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG14：油纸伞应用启动页"><img src="./assets/apps/app-1.png" alt="油纸伞非遗应用启动界面" width="615" height="1272" loading="lazy" decoding="async"></button><figcaption>FIG14</figcaption></div></div></figure>
+      <figure class="apps-figure app-2"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG15：油纸伞创意工坊"><img src="./assets/apps/app-2.png" alt="油纸伞应用创意工坊界面" width="613" height="1272" loading="lazy" decoding="async"></button><figcaption>FIG15</figcaption></div></div></figure>
+      <figure class="apps-figure app-3"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG16：油纸伞商品列表"><img src="./assets/apps/app-3.png" alt="油纸伞应用商品列表界面" width="613" height="1264" loading="lazy" decoding="async"></button><figcaption>FIG16</figcaption></div></div></figure>
+      <figure class="apps-figure app-4"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG17：健身应用个人中心"><img src="./assets/apps/app-4.png" alt="深色健身应用个人中心界面" width="851" height="1848" loading="lazy" decoding="async"></button><figcaption>FIG17</figcaption></div></div></figure>
+      <figure class="apps-figure app-5"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG18：健身应用动作库"><img src="./assets/apps/app-5.png" alt="深色健身应用动作库界面" width="851" height="1847" loading="lazy" decoding="async"></button><figcaption>FIG18</figcaption></div></div></figure>
+      <figure class="apps-figure app-6"><div class="apps-depth"><div class="apps-reveal"><button class="artwork-open" aria-label="放大查看 FIG19：健身应用首页"><img src="./assets/apps/app-6.png" alt="深色健身应用首页与训练数据界面" width="851" height="1848" loading="lazy" decoding="async"></button><figcaption>FIG19</figcaption></div></div></figure>
+      <div class="apps-likes"><svg viewBox="300 310 530 585" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="35" stroke-linejoin="round"><path d="M420 551C382 516 321 421 354 382C390 323 474 384 527 434C557 463 582 497 611 545C662 527 746 492 781 531C840 579 768 652 681 689C677 762 651 819 594 845C527 876 460 864 416 842C361 811 323 764 329 691C335 640 365 613 410 612C459 610 495 639 518 674C546 716 528 747 505 755C470 777 425 748 407 726"/><path d="M420 551C468 537 517 550 552 578C585 604 601 638 592 667C586 695 564 709 539 707"/><path d="M557 341L585 401M683 331L654 400M763 422L704 447"/></svg><span>302 Likes . . . . .  </span></div>
+      <button class="apps-accent apps-loading" type="button" aria-label="重播文字填充动效"><span class="apps-loading-base" aria-hidden="true">LOADING</span><span class="apps-loading-fill" aria-hidden="true">LOADING</span></button>
+    </div>
+  </section>
+  <section class="ending-section" id="the-end" aria-labelledby="ending-title">
+    <h2 id="ending-title" class="sr-only">THE END</h2>
+    <div class="ending-scene" aria-hidden="true">
+      <div class="ending-rings">
+        <div class="ending-ring ending-ring-1"></div>
+        <div class="ending-ring ending-ring-2"></div>
+        <div class="ending-ring ending-ring-3"></div>
+        <div class="ending-ring ending-ring-5"></div>
+      </div>
+      <svg class="ending-lettering" viewBox="0 100 736 550" focusable="false">
+        <defs>
+          <filter id="ending-white-ink" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  .2126 .7152 .0722 0 0"/>
+            <feComponentTransfer><feFuncA type="linear" slope="1.08" intercept="-.025"/></feComponentTransfer>
+          </filter>
+        </defs>
+        <image href="./assets/ending/the-end.jpg" width="736" height="736" filter="url(#ending-white-ink)"/>
+      </svg>
+    </div>
+  </section>
+  <dialog id="artwork-dialog" class="artwork-dialog" aria-labelledby="artwork-caption">
+    <button class="close-dialog artwork-close" aria-label="关闭作品大图">×</button>
+    <div class="artwork-view"><img id="artwork-image" alt=""><p id="artwork-caption"></p></div>
+    <button class="artwork-previous" aria-label="上一张作品"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="m15 5-7 7 7 7"/></svg></button>
+    <button class="artwork-next" aria-label="下一张作品"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="m9 5 7 7-7 7"/></svg></button>
+  </dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="close-dialog" aria-label="关闭">×</button>
+    <h2 id="about-title">MA XIANG</h2>
+    <p>我是一名关注交互体验的产品设计学生，喜欢从日常使用中的小困惑出发，探索更清晰、自然的交互方式。</p>
+    <p>正在寻找设计实习机会，期待与不同背景的人一起把想法变成体验。</p>
+  </dialog>
+  <span class="sr-only" role="status" id="status"></span>
+  <div class="scene-veil" id="scene-veil" aria-hidden="true"></div>
+  <svg class="filter-definitions" aria-hidden="true" width="0" height="0">
+    <defs>
+      <filter id="clock-white-lines" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  -.2126 -.7152 -.0722 1 0"/><feComponentTransfer><feFuncA type="linear" slope="1.8" intercept="-.14"/></feComponentTransfer></filter>
+      <filter id="layout-refraction" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="8" result="ripples"/>
+        <feGaussianBlur in="ripples" stdDeviation="2" result="smooth-ripples"/>
+        <feDisplacementMap in="SourceGraphic" in2="smooth-ripples" scale="20" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#030303">
+  <meta name="description" content="关于 MA XIANG。日常、旅行与设计。">
+  <title>ABOUT — MA XIANG</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./about.js" defer></script>
+  <script src="./about-trail.js" defer></script>
+  <script src="./about-introduction.js" defer></script>
+</head>
+<body class="about-page">
+  <a class="work-brand about-brand" href="./index.html#home" aria-label="MA XIANG，返回首页">
+    <svg viewBox="180 1450 4660 940" aria-hidden="true" focusable="false"><image href="./assets/ma-xiang-handwritten.png" width="4961" height="3508" class="handwriting"/></svg>
+  </a>
+  <header class="header">
+    <nav aria-label="主导航">
+      <a href="./index.html#home">HOME</a>
+      <a class="active" href="./about.html" aria-current="page">ABOUT</a>
+    </nav>
+  </header>
+  <main class="about-journey" aria-label="关于我，向下滑动查看照片拼贴">
+    <div class="about-photo-wall" aria-hidden="true"><img src="./assets/about/photo-wall.jpg" width="2800" height="2769" alt="" decoding="async" fetchpriority="high"></div>
+    <div class="about-black-veil" aria-hidden="true"></div>
+    <div class="about-trail-layer" aria-hidden="true"></div>
+    <div id="about-photo-sources" hidden aria-hidden="true">
+      <img src="./assets/about/photos/photo-1.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-2.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-3.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-4.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-5.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-6.jpg" alt="" decoding="async">
+      <img src="./assets/about/photos/photo-7.jpg" alt="" decoding="async">
+    </div>
+    <span class="sr-only" role="status" id="about-photo-status"></span>
+    <h1 class="about-figure">
+      <span class="sr-only">关于我 — About me</span>
+      <svg viewBox="1980 590 1075 1520" aria-hidden="true" focusable="false"><image href="./assets/about/about-me.png" width="4961" height="3508"/></svg>
+    </h1>
+    <a class="scroll-prompt about-scroll-prompt" href="#memories" aria-label="下滑查看照片拼贴">
+      <div class="scroll-track" aria-hidden="true">
+        <span class="scroll-group"><span>下滑更多</span><span>下滑更多</span><span>下滑更多</span></span>
+        <span class="scroll-group"><span>下滑更多</span><span>下滑更多</span><span>下滑更多</span></span>
+      </div>
+    </a>
+    <span class="about-scroll-target" id="memories" aria-hidden="true"></span>
+  </main>
+  <div class="about-intro-backdrop" aria-hidden="true"></div>
+  <section class="about-introduction" id="about-introduction" aria-label="自我介绍">
+    <div class="about-intro-stage">
+      <div class="about-intro-copy">
+        <p>我的名字是马翔，你也可以叫我小马</p>
+        <p>目前是湖南工业大学 产品设计专业大三学生，GPA 3.8/5.0。关注UI交互与AIGC辅助设计、用户体验设计，着重运用agnet大模型设计，具备设计调研、方案表达、建模渲染和视觉优化基础。</p>
+        <p>英语水平：CET-4 / CET-6，满足日常交流</p>
+        <p>项目与实践经历
+2026.07-2026.09
+在四川农商银行担任零售金融实习生（客户体验方向），展客户咨询，覆盖开户结算、手机银行、信贷及理财咨询等业务；按老年客户、个体商户、农户、中青年客群归纳需求差异，梳理高频问题台账，沉淀真实用户场景与痛点清单。
+2025.03-至今
+校内设计工作室  |  视觉设计师
+独立设计宣传海报、活动主视觉及社交媒体传播物料
+参与品牌视觉延展设计，包括文创包装、周边产品及展示物料设计
+根据项目需求完成设计提案与迭代优化，推动方案落地
+2025.07-2025.09
+运用PS、AI及AIGC工具进行视觉创意与画面优化
+根据客户反馈进行多轮修改与交付
+2026.06.06-2026.06.07
+抖音黑客松株洲站  |  AI智能体辅助视觉设计
+参加抖音黑客松株洲站活动，参与AI智能体辅助视觉设计实践
+运用AI智能体协助完成视觉方向探索、素材生成与画面优化
+参与活动方案表达与视觉物料整理，提升设计迭代效率</p>
+        <p>技能工具
+熟悉ai大模型工作流，以及基础设计软件 figma photoshop adobe illustrator rihno</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
