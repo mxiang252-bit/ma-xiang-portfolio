@@ -50,8 +50,7 @@ body::after {
 .drawing-stage { position: relative; width: min(88%, 1320px); margin: auto; isolation: isolate; touch-action: none; cursor: none; }
 .name { margin: 0; padding: 24px 0; font-size: 0; user-select: none; }
 .signature { display: block; width: 100%; height: auto; overflow: hidden; animation: signature-in 1s cubic-bezier(.2,.7,.2,1) both; }
-/* Preserve the original transparent PNG and brushwork; recolor for the dark background. */
-.handwriting { filter: brightness(0) invert(1); }
+/* Paint white through the original PNG alpha in SVG, without CSS color filters. */
 .drawing-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; touch-action: none; }
 .pencil { display: none; position: absolute; z-index: 4; width: 24px; height: 24px; color: #fff; pointer-events: none; transform: translate(0,-24px); }
 .pencil svg { width: 100%; height: 100%; }
